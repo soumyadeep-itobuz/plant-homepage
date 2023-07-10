@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plant Home Page</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- navbar section starts -->
+    <nav
+      class="d-flex flex-column flex-md-row container justify-content-between mt-3"
+    >
+      <div
+        class="navbar-left d-flex flex-column flex-lg-row gap-lg-5 align-self-center"
+      >
+        <p class="playfair-font grey-color fs-5 align-self-center d-flex">
+          My <span class="green-color">Plants</span>
+          <button class="bg-white border-0 d-lg-none" onclick="hamburger()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </p>
+        <ul
+          class="nav-item d-lg-flex gap-3 gap-lg-5 list-unstyled poppins-font align-self-center"
+        >
+          <li><a href="#" class="text-decoration-none text-black">About</a></li>
+          <li><a href="#" class="text-decoration-none text-black">Shop</a></li>
+          <li>
+            <a href="#" class="text-decoration-none text-black">Plants</a>
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none text-black">Delivery</a>
+          </li>
+          <li><a href="#" class="text-decoration-none text-black">Help</a></li>
+        </ul>
+      </div>
+      <div class="navbar-right d-flex gap-4 align-self-center">
+        <p class="border border-2 border-black p-1 rounded-5 mt-2 d-flex">
+          <input
+            type="text"
+            placeholder="Search Products..."
+            class="border-0"
+          />
+          <i
+            class="fa-solid fa-magnifying-glass align-self-center"
+            style="color: #1e1e1f"
+          ></i>
+        </p>
+        <i class="fa-solid fa-user-plus mt-3 pt-2"></i>
+        <i class="fa-solid fa-basket-shopping mt-3 pt-2"></i>
+      </div>
+    </nav>
+    <!-- navbar section ends  -->
+
+    <!-- hero section starts -->
+    <section class="hero mx-5 me-lg-0 d-flex my-5">
+      <div class="hero-left align-self-center ms-xl-3 align-items-center">
+        <p class="poppins-font ps-xl-5 mb-5 ms-5">Love nature</p>
+        <h1 class="green-color playfair-font px-xl-5">
+          Take a new friend to your home
+        </h1>
+        <p class="d-flex gap-5 mt-5 pt-5 ps-xl-5">
+          <button class="border border-3 border-black rounded-5 bg-white px-3">
+            Plant Care
+          </button>
+          <button
+            class="border border-3 border-black rounded-5 text-white px-3 bg-black"
+          >
+            Buy a plant
+          </button>
+        </p>
+        <p class="mt-5 pt-5">
+          <a href="#" target="_blank"
+            ><i class="fa-brands fa-facebook fs-3 ps-3 text-success"></i
+          ></a>
+          <a href="#" target="_blank"
+            ><i class="fa-brands fa-instagram fs-3 ps-3 text-success"></i
+          ></a>
+          <a href="#" target="_blank"
+            ><i class="fa-brands fa-pinterest fs-3 ps-3 text-success"></i
+          ></a>
+        </p>
+      </div>
+      <img
+        src="../images/hero.png"
+        alt="hero"
+        class="ms-xl-3 d-none d-lg-block"
+      />
+    </section>
+
+    <!-- collection section starts -->
+    <section class="container collection">
+      <h2 class="text-center playfair-font">Plant Collection</h2>
+      <div class="d-flex flex-column flex-md-row gap-3 mt-5">
+        <div>
+          <img src="../images/paradise.png" alt="paradise" class="w-100" />
+          <p class="playfair-font fw-bold pt-3">Birds of paradise</p>
+        </div>
+        <div>
+          <img src="../images/rubber.png" alt="rubber" class="w-100" />
+          <p class="playfair-font fw-bold pt-3">Rubber plants</p>
+        </div>
+        <div>
+          <img src="../images/pearls.png" alt="pearls" class="w-100" />
+          <p class="playfair-font fw-bold pt-3">String of pearls</p>
+        </div>
+      </div>
+    </section>
+    <!-- collection section ends -->
+
+    <!-- journey section starts -->
+    <section
+      class="px-5 pe-lg-0 d-flex flex-column flex-md-row position-relative"
+    >
+      <img
+        src="../images/journey.png"
+        alt="journey"
+        class="w-50 d-none d-md-block mx-auto"
+      />
+      <div class="jouney-content align-self-center px-lg-5 mt-lg-5 pt-lg-5">
+        <h2 class="playfair-font">Our journey</h2>
+        <p class="mt-5 grey-color">
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when It is a long .It is a long established
+          fact that a reader will be distracted by the readable content of a is
+          simply.
+        </p>
+        <button class="border rounded-5 bg-black text-white px-5 py-2">
+          Get Start
+        </button>
+      </div>
+      <img
+        src="../images/journey-right.png"
+        alt="journey-right"
+        class="journey-right position-absolute d-none d-lg-block"
+      />
+    </section>
+    <!-- journey section ends -->
+
+    <!-- advantages section starts -->
+    <section class="mt-5 container">
+      <h2 class="playfair-font">Our advantages</h2>
+      <div
+        class="d-flex flex-column flex-nowrap flex-lg-row gap-5 mt-5 px-xl-5"
+      >
+        <div
+          class="advantages-icons d-flex align-items-center p-4 gap-3 position-relative"
+        >
+          <img
+            src="../images/easy-order.png"
+            alt="easy-order"
+            class="position-absolute top-50 start-0 translate-middle img-fluid ms-3"
+          />
+          <p class="poppins-font fw-bold px-5">
+            Easy Order<br />
+            <span class="fw-light grey-color"
+              >It is a long established fact that a reader will be.</span
+            >
+          </p>
+        </div>
+        <div
+          class="advantages-icons d-flex align-items-center p-4 gap-3 position-relative"
+        >
+          <img
+            src="../images/fast-delivery.png"
+            alt="edelivery"
+            class="position-absolute top-50 start-0 translate-middle img-fluid ms-2"
+          />
+          <p class="poppins-font fw-bold px-5">
+            Fast delivery<br />
+            <span class="fw-light grey-color"
+              >It is a long established fact that a reader will be.</span
+            >
+          </p>
+        </div>
+        <div
+          class="advantages-icons d-flex align-items-center p-4 gap-3 position-relative"
+        >
+          <img
+            src="../images/easy.png"
+            alt="easy-order"
+            class="position-absolute top-50 start-0 translate-middle img-fluid ms-3"
+          />
+          <p class="poppins-font fw-bold px-5">
+            Easy Order <br />
+            <span class="fw-light grey-color"
+              >It is a long established fact that a reader will be.</span
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- advantages section ends -->
+
+    <!-- form section starts -->
+    <section class="form mt-5 d-flex position-relative">
+      <img
+        src="../images/ask.png"
+        alt="ask"
+        class="form-img d-none d-lg-block position-relative w-75 mt-5"
+      />
+      <div class="form-input p-3 border rounded-5 p-3 p-xl-5">
+        <h2 class="playfair-font">Ask us anything</h2>
+        <form class="d-flex flex-column gap-5 mt-5">
+          <input
+            type="text"
+            placeholder="Name"
+            class="border border-top-0 border-start-0 border-end-0"
+          />
+          <input
+            type="text"
+            placeholder="Phone"
+            class="border border-top-0 border-start-0 border-end-0"
+          />
+          <input
+            type="text"
+            placeholder="e-mail"
+            class="border border-top-0 border-start-0 border-end-0"
+          />
+          <textarea
+            rows="2"
+            cols="20"
+            placeholder="message"
+            class="border border-top-0 border-start-0 border-end-0"
+          ></textarea>
+          <button
+            class="border rounded-5 bg-black text-white px-md-5 py-2 w-25"
+          >
+            Send
+          </button>
+        </form>
+        <p class="text-end mb-5">
+          <a href="#" target="_blank"
+            ><i class="fa-brands fa-facebook fs-3 ps-3 text-success"></i
+          ></a>
+          <a href="#" target="_blank"
+            ><i class="fa-brands fa-instagram fs-3 ps-3 text-success"></i
+          ></a>
+          <a href="#" target="_blank"
+            ><i class="fa-brands fa-pinterest fs-3 ps-3 text-success"></i
+          ></a>
+        </p>
+      </div>
+    </section>
+    <!-- form section ends -->
+
+    <!-- choosing section starts -->
+    <section class="mt-5 container">
+      <h2 class="text-center playfair-font">Chooseing the right path</h2>
+      <div class="d-flex flex-column flex-md-row gap-5 mt-5 mx-lg-5">
+        <div class="choose-icons p-3 py-5">
+          <img
+            src="../images/garden.png"
+            alt="garden"
+            class="rounded-circle px-4 py-3"
+          />
+          <p class="playfair-font fw-medium fs-4 mt-3">Garden Plants <br /></p>
+          <span class="poppins-font"
+            >It is a long established fact that a reader will be distracted by
+            the
+          </span>
+        </div>
+        <div class="choose-icons p-3 py-5">
+          <img
+            src="../images/indoor.png"
+            alt="garden"
+            class="rounded-circle px-3 py-3"
+          />
+          <p class="playfair-font fw-medium fs-4 mt-3">Indoor Plants <br /></p>
+          <span class="poppins-font"
+            >It is a long established fact that a reader will be distracted by
+            the
+          </span>
+        </div>
+        <div class="choose-icons p-3 py-5">
+          <img
+            src="../images/home.png"
+            alt="garden"
+            class="rounded-circle px-3 py-3"
+          />
+          <p class="playfair-font fw-medium fs-4 mt-3">Home Plants <br /></p>
+          <span class="poppins-font"
+            >It is a long established fact that a reader will be distracted by
+            the
+          </span>
+        </div>
+      </div>
+    </section>
+    <!-- Chooseing section ends -->
+
+    <!-- clients section ends -->
+    <section class="clients mt-5 mx-5">
+      <h2 class="playfair-font">What clients talk about us</h2>
+      <div
+        class="position-relative d-flex mx-lg-auto mt-5 gap-3 border border-0` rounded-5 p-2 p-lg-5 pt-4"
+      >
+        <img
+          src="../images/clients.png"
+          alt="clients"
+          class="d-none d-lg-block"
+        />
+        <p class="fs-1 px-lg-3 align-self-start"><i class="fa-solid fa-quote-left"></i></p>
+        <p class="align-self-start">
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when It is a long .It is a long .It is a
+          long established fact that a reader will be . It is a long established
+          fact that a reader .
+        </p>
+        <p class="fs-1 align-self-end mt-5"><i class="fa-solid fa-quote-right"></i> </p>
+      </div>
+    </section>
+    <!-- clients section ends -->
+
+    <!-- care section starts -->
+    <section class="mt-5 mx-5 me-lg-0 d-flex gap-5">
+      <div class="align-self-center">
+        <h2 class="mb-4 mb-xl-5 playfair-font">Plant Care</h2>
+        <p>
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when It is a long .It is a long established
+          fact that a reader will be distracted by the readable content of a is
+          simply. <br />a page when It is a long .It is a long established fact
+          that a reader will be distracted by the readable content of a is
+          simply.
+        </p>
+        <button class="border rounded-5 bg-black text-white px-5 py-2 mt-xl-5">
+          Read the blog
+        </button>
+      </div>
+      <img
+        src="../images/care.png"
+        alt="care"
+        class="d-none d-lg-block w-50 align-self-center"
+      />
+    </section>
+    <!-- care section ends -->
+
+    <!-- footer section starts -->
+    <footer class="d-flex flex-column mt-5 text-white">
+      <div
+        class="d-flex flex-wrap flex-lg-nowrap gap-5 justify-content-evenly m-3 mt-5"
+      >
+        <div class="footer-left">
+          <h2>nuvosa</h2>
+          <p class="poppins-font mt-3">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when It is a long .It is a long
+            established fact that a reader will be distracted by the.
+          </p>
+          <a href="#" class="text-success"
+            ><i class="fa-brands fa-square-instagram fs-1 p-1"></i
+          ></a>
+          <a href="#" class="text-success"
+            ><i class="fa-brands fa-square-facebook fs-1 p-1"></i
+          ></a>
+          <a href="#" class="text-success"
+            ><i class="fa-brands fa-square-youtube fs-1 p-1"></i
+          ></a>
+          <a href="#" class="text-success"
+            ><i class="fa-brands fa-square-twitter fs-1 p-1"></i
+          ></a>
+        </div>
+        <div class="d-flex flex-column">
+          <p class="fs-5 py-2">Services</p>
+          <a href="#" class="text-decoration-none text-white">Gardening</a>
+          <a href="#" class="text-decoration-none text-white">Loan service</a>
+          <a href="#" class="text-decoration-none text-white">Leaf removal</a>
+          <a href="#" class="text-decoration-none text-white">Decoration</a>
+          <a href="#" class="text-decoration-none text-white">Trimming</a>
+        </div>
+        <div class="d-flex flex-column">
+          <p class="fs-5 py-2">Support</p>
+          <a href="#" class="text-decoration-none text-white">Gardening</a>
+          <a href="#" class="text-decoration-none text-white">Loan service</a>
+          <a href="#" class="text-decoration-none text-white">Leaf removal</a>
+          <a href="#" class="text-decoration-none text-white">Decoration</a>
+          <a href="#" class="text-decoration-none text-white">Trimming</a>
+        </div>
+        <div class="d-flex flex-column">
+          <p class="fs-5 py-2">Company</p>
+          <a href="#" class="text-decoration-none text-white">Gardening</a>
+          <a href="#" class="text-decoration-none text-white">Loan service</a>
+          <a href="#" class="text-decoration-none text-white">Leaf removal</a>
+          <a href="#" class="text-decoration-none text-white">Decoration</a>
+          <a href="#" class="text-decoration-none text-white">Trimming</a>
+        </div>
+      </div>
+      <hr />
+      <div
+        class="footer-bootom d-flex flex-column flex-md-row justify-content-between mx-lg-5 mt-3 px-lg-5"
+      >
+        <p class="text-center mx-xl-5">
+          Copyright © 2023 nuvosa, All rights reserved.
+        </p>
+        <p class="d-flex mx-xl-3 justify-content-center">
+          <a href="#" class="text-decoration-none text-white px-3"
+            >Terms of use</a
+          >
+          <a href="#" class="text-decoration-none text-white px-3"
+            >Copyright & Trademark</a
+          >
+          <a href="#" class="text-decoration-none text-white px-3">Policy</a>
+        </p>
+      </div>
+    </footer>
+    <!-- footer section ends  -->
+
+    <script
+      src="https://kit.fontawesome.com/6dc7929f7c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

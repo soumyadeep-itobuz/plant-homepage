@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100;400;500;600;700&family=Poppins:wght@400;500&display=swap");
+
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.playfair-font {
+  font-family: "Playfair Display", serif;
+}
+
+.poppins-font {
+  font-family: "Poppins", sans-serif;
+}
+
+.grey-color {
+  color: #7d807e;
+}
+
+.green-color {
+  color: #3e8847;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.nav-item {
+  display: none !important;
+}
+
+.hero-left {
+  width: 100%;
+}
+
+.collection {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.show {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.advantages-icons {
+  background-color: #fcfbf8;
+  border: #fcfbf8;
+  border-radius: 30px;
+}
+
+.form-input {
+  width: 100%;
+  background-color: #faf9f7;
+}
+
+.form-input input,
+textarea {
+  background-color: #fcfbf8;
+}
+
+.form p {
+  margin-top: -5%;
+}
+
+.choose-icons {
+  box-shadow: 0px 0px 37px -2px rgba(17, 24, 39, 0.05);
+}
+
+.choose-icons img {
+  background-color: green;
+}
+
+.choose-icons span {
+  color: #7d807e;
+}
+
+.choose-icons:hover {
+  background-color: #3e8847;
+  color: white !important;
+}
+
+.choose-icons:hover span {
+  color: white !important;
+}
+
+.choose-icons:hover img {
+  background-color: gainsboro;
+}
+
+footer {
+  background-color: #09270d;
+}
+
+.footer-bootom {
+  font-size: 0.7rem !important;
+  font-weight: 100;
+}
+.clients div {
+     box-shadow: 0px 0px 37px -2px rgba(17, 24, 39, 0.05);
+}
+.clients div:hover {
+  background-color: #3e8847;
+  color: white;
+  scale: 1.01;
+}
+
+@media (min-width: 1024px) {
+  .hero-left {
+    width: 27.5vw;
+    position: absolute;
+    top: 30%;
+    z-index: 1;
+  }
+
+  .hero img {
+    width: 76.3vw !important;
+    position: relative;
+    left: 20%;
+  }
+
+  .journey-content {
+    margin-left: -20% !important;
+  }
+
+  .journey-right {
+    left: 85%;
+    top: -30%;
+    width: 15%;
+  }
+
+  .form-input {
+    position: absolute;
+    top: 21%;
+    left: 40%;
+    z-index: 1;
+    width: 60%;
+  }
+
+  .footer-left {
+    width: 25%;
+  }
+
+  .clients img {
+    position: absolute;
+    width: 20%;
+    top: 25%;
+    left: -15%;
+  }
+
+  .clients div {
+    width: 50%;
+  }
+}
