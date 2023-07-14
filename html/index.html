@@ -102,7 +102,7 @@
           </div>
           <p class="mx-auto gap-3 gap-md-5 d-flex justify-content-between">
             <button
-              onclick="previous()"
+              onclick="heroPrevious()"
               class="border-0 rounded-circle p-3 px-4 bg-light"
             >
               <i class="fa-solid fa-caret-left fs-4" style="color: #22511f"></i>
@@ -111,7 +111,7 @@
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <button
-              onclick="next()"
+              onclick="heroNext()"
               class="border-0 rounded-circle p-3 px-4 bg-light"
             >
               <i
@@ -139,36 +139,37 @@
     <!-- collection section starts -->
     <section class="container collection">
       <h2 class="text-center playfair-font">Plant Collection</h2>
-      <div class="d-flex flex-column flex-md-row gap-2 mt-5 container">
-        <div class="d-flex flex-column flex-md-row gap-3 mt-5">
-          <div>
+      <div class="d-flex flex-column flex-md-row gap-2 mt-5 container collect">
+        <div class="collect d-flex flex-column flex-md-row gap-3 mt-5">
+          <div class="collection-items">
             <img src="../images/paradise.png" alt="paradise" class="w-100" />
             <p class="playfair-font fw-bold pt-3">Birds of paradise</p>
           </div>
-          <div>
+          <div class="collection-items">
             <img src="../images/rubber.png" alt="rubber" class="w-100" />
             <p class="playfair-font fw-bold pt-3">Rubber plants</p>
           </div>
-          <div>
+          <div class="collection-items">
             <img src="../images/pearls.png" alt="pearls" class="w-100" />
             <p class="playfair-font fw-bold pt-3">String of pearls</p>
           </div>
         </div>
         <div class="align-self-center">
           <button
-            onclick="previousCollection()"
+            onclick="moveCollection()"
             class="border-0 rounded-circle p-2 px-3 mx-2 bg-light"
           >
             <i class="fa-solid fa-caret-right fs-6" style="color: #22511f"></i>
           </button>
           <button
-            onclick="nextCollection()"
+            onclick="moveCollection()"
             class="border-0 rounded-circle p-2 px-3 mx-2 mt-2 bg-light"
           >
             <i class="fa-solid fa-caret-left fs-6" style="color: #22511f"></i>
           </button>
         </div>
       </div>
+    </section>
     </section>
     <!-- collection section ends -->
 
@@ -421,7 +422,7 @@
             <i class="fa-solid fa-caret-right fs-4" style="color: #22511f"></i>
           </button>
           <button
-            onclick="NextClients()"
+            onclick="nextClients()"
             class="border-0 rounded-circle p-3 px-4 bg-light my-auto"
           >
             <i class="fa-solid fa-caret-right fs-4" style="color: #22511f"></i>
