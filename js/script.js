@@ -2,8 +2,8 @@ const slides = document.querySelectorAll(".slides");
 const dot = document.querySelectorAll(".dot");
 const clients = document.querySelectorAll(".clients");
 
-let curIndex = 0;
-let index = 0;
+let heroIndex = 0;
+let clientsIndex = 0;
 
 function hamburger() {
   document.querySelector(".nav-item").classList.toggle("show");
@@ -20,25 +20,21 @@ function heroSlide(i) {
 }
 
 function heroPrevious() {
-  if (curIndex === 0) {
-    curIndex = slides.length - 1;
+  if (heroIndex === 0) {
+    heroIndex = slides.length - 1;
   } else {
-    curIndex = curIndex - 1;
+    heroIndex = heroIndex - 1;
   }
-  currentSlide(curIndex);
+  currentSlide(heroIndex);
 }
 
 function heroNext() {
-  if (curIndex === slides.length - 1) {
-    curIndex = 0;
+  if (heroIndex === slides.length - 1) {
+    heroIndex = 0;
   } else {
-    curIndex = curIndex + 1;
+    heroIndex = heroIndex + 1;
   }
-  currentSlide(curIndex);
-}
-
-function moveCollection() {
-  document.querySelector(".collection-items").classList.toggle("hidden");
+  currentSlide(heroIndex);
 }
 
 function currentSlide(i) {
@@ -52,6 +48,10 @@ function currentSlide(i) {
   }
 }
 
+function moveCollection() {
+  document.querySelector(".collection-items").classList.toggle("hidden");
+}
+
 function clientsSlide(l) {
   clients[l].classList.remove("hidden");
   for (let j = 0; j < l; j++) {
@@ -63,22 +63,22 @@ function clientsSlide(l) {
 }
 
 function nextClients() {
-  if (index === clients.length - 1) {
-    index = 0;
+  if (clientsIndex === clients.length - 1) {
+    clientsIndex = 0;
   } else {
-    index = index + 1;
+    clientsIndex = clientsIndex + 1;
   }
-  clientsSlide(index);
+  clientsSlide(clientsIndex);
 }
 
 function previousClients() {
-  if (index === 0) {
-    index = clients.length - 1;
+  if (clientsIndex === 0) {
+    clientsIndex = clients.length - 1;
   } else {
-    index = index - 1;
+    clientsIndex = clientsIndex - 1;
   }
-  clientsSlide(index);
+  clientsSlide(clientsIndex);
 }
 
-currentSlide(curIndex);
-clientsSlide(index);
+currentSlide(heroIndex);
+clientsSlide(clientsIndex);
