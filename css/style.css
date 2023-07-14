@@ -35,6 +35,18 @@ textarea:focus {
   width: 100%;
 }
 
+.slides {
+  width: 100%;
+  height: 30vh;
+}
+
+.dot {
+  height: 5px;
+  width: 15px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
 .collection {
   margin-top: 10rem;
   margin-bottom: 10rem;
@@ -98,28 +110,88 @@ footer {
   font-size: 0.7rem !important;
   font-weight: 100;
 }
-.clients div {
+
+.clients img {
+  position: absolute;
+  width: 25% !important;
+  top: 30%;
+  left: -10%;
+}
+
+.clients {
+  width: 80% !important;
+  position: relative;
+  right: 0%;
   box-shadow: 0px 0px 37px -2px rgba(17, 24, 39, 0.05);
 }
 
-.clients div:hover {
+.clients:hover {
   background-color: #3e8847;
   color: white;
-  scale: 1.01;
+}
+
+.clients:hover i {
+  color: white !important;
+}
+
+.effect {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.1;
+    translate: 10px;
+  }
+
+  to {
+    opacity: 1;
+    translate: -10px;
+
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  .slides {
+    width: 60%;
+    height: 80vh;
+  }
+
+  .clients img {
+    width: 15% !important;
+    top: 25%;
+    left: -10%;
+    width: 25%;
+  }
+
+  .clients {
+    width: 40% !important;
+  }
+
 }
 
 @media (min-width: 992px) {
+  .slides {
+    width: 65vw;
+    height: 80vh;
+  }
+
   .hero-left {
-    width: 27.5vw;
     position: absolute;
-    top: 30%;
+    width: 30vw !important;
+    left: 12%;
     z-index: 1;
   }
 
-  .hero img {
-    width: 76.3vw !important;
+  .hero-right {
     position: relative;
-    left: 20%;
+    left: 35%;
+    width: 50vw;
   }
 
   .journey-content {
@@ -144,19 +216,20 @@ footer {
     width: 25%;
   }
 
-  .clients img {
-    position: absolute;
-    width: 20%;
-    top: 25%;
-    left: -15%;
+  .clients {
+    width: 100% !important;
   }
 
-  .clients div {
-    width: 50%;
+  .clients-icons {
+    width: 40%;
   }
 }
 
 @media (min-width: 1440px) {
+  h1 {
+    font-size: 4.4rem !important;
+  }
+
   .form-input {
     top: 21%;
   }

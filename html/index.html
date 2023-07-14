@@ -53,64 +53,120 @@
             style="color: #1e1e1f"
           ></i>
         </p>
-        <i class="fa-solid fa-user-plus mt-3 "></i>
+        <i class="fa-solid fa-user-plus mt-3"></i>
         <i class="fa-solid fa-basket-shopping mt-3"></i>
       </div>
     </nav>
     <!-- navbar section ends  -->
 
     <!-- hero section starts -->
-    <section class="hero mx-5 me-lg-0 d-flex my-5">
-      <div class="hero-left align-self-center ms-xl-3 align-items-center">
-        <p class="poppins-font ps-xl-5 mb-5 ms-5">Love nature</p>
-        <h1 class="green-color playfair-font px-xl-5">
-          Take a new friend to your home
-        </h1>
-        <p class="d-flex gap-5 mt-5 pt-5 ps-xl-5">
-          <button class="border border-3 border-black rounded-5 bg-white px-3">
-            Plant Care
-          </button>
-          <button
-            class="border border-3 border-black rounded-5 text-white px-3 bg-black"
-          >
-            Buy a plant
-          </button>
-        </p>
-        <p class="mt-5 pt-5">
-          <a href="#" target="_blank"
-            ><i class="fa-brands fa-facebook fs-3 ps-3 text-success"></i
-          ></a>
-          <a href="#" target="_blank"
-            ><i class="fa-brands fa-instagram fs-3 ps-3 text-success"></i
-          ></a>
-          <a href="#" target="_blank"
-            ><i class="fa-brands fa-pinterest fs-3 ps-3 text-success"></i
-          ></a>
-        </p>
+    <section class="d-flex flex-column gap-0 mt-5">
+      <div class="d-flex flex-column flex-lg-row">
+        <div class="container hero-left align-self-center">
+          <p class="poppins-font mb-5">
+            <span class="text-secondary">⎯⎯</span> Love nature
+          </p>
+          <h1 class="green-color playfair-font">
+            Take a new friend to your home
+          </h1>
+          <p class="d-flex gap- mt-3 pt-5 justify-content-xl-between gap-5">
+            <button
+              class="border border-3 border-black rounded-5 bg-white px-3 px-xl-4"
+            >
+              Plant Care
+            </button>
+            <button
+              class="border border-3 border-black rounded-5 text-white px-3 bg-black px-xl-4 py-xl-2"
+            >
+              Buy a plant
+            </button>
+          </p>
+        </div>
+        <div class="d-flex flex-column hero-right">
+          <div>
+            <img
+              src="../images/hero-imageone.png"
+              alt="hero"
+              class="slides mx-auto effect"
+            />
+            <img
+              src="../images/hero-imagetwo.png"
+              alt="hero"
+              class="slides mx-auto effect"
+            />
+            <img
+              src="../images/hero-imagethree.png"
+              alt="hero"
+              class="slides mx-auto effect"
+            />
+          </div>
+          <p class="mx-auto gap-3 gap-md-5 d-flex justify-content-between">
+            <button
+              onclick="previous()"
+              class="border-0 rounded-circle p-3 px-4 bg-light"
+            >
+              <i class="fa-solid fa-caret-left fs-4" style="color: #22511f"></i>
+            </button>
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <button
+              onclick="next()"
+              class="border-0 rounded-circle p-3 px-4 bg-light"
+            >
+              <i
+                class="fa-solid fa-caret-right fs-4"
+                style="color: #22511f"
+              ></i>
+            </button>
+          </p>
+        </div>
       </div>
-      <img
-        src="../images/hero.png"
-        alt="hero"
-        class="ms-xl-3 d-none d-lg-block"
-      />
+      <p class="mx-auto mx-lg-5 px-5">
+        <a href="#" target="_blank"
+          ><i class="fa-brands fa-facebook fs-3 ps-3 text-success"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="fa-brands fa-instagram fs-3 ps-3 text-success"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="fa-brands fa-pinterest fs-3 ps-3 text-success"></i
+        ></a>
+      </p>
     </section>
     <!-- hero section ends -->
 
     <!-- collection section starts -->
     <section class="container collection">
       <h2 class="text-center playfair-font">Plant Collection</h2>
-      <div class="d-flex flex-column flex-md-row gap-3 mt-5">
-        <div>
-          <img src="../images/paradise.png" alt="paradise" class="w-100" />
-          <p class="playfair-font fw-bold pt-3">Birds of paradise</p>
+      <div class="d-flex flex-column flex-md-row gap-2 mt-5 container">
+        <div class="d-flex flex-column flex-md-row gap-3 mt-5">
+          <div>
+            <img src="../images/paradise.png" alt="paradise" class="w-100" />
+            <p class="playfair-font fw-bold pt-3">Birds of paradise</p>
+          </div>
+          <div>
+            <img src="../images/rubber.png" alt="rubber" class="w-100" />
+            <p class="playfair-font fw-bold pt-3">Rubber plants</p>
+          </div>
+          <div>
+            <img src="../images/pearls.png" alt="pearls" class="w-100" />
+            <p class="playfair-font fw-bold pt-3">String of pearls</p>
+          </div>
         </div>
-        <div>
-          <img src="../images/rubber.png" alt="rubber" class="w-100" />
-          <p class="playfair-font fw-bold pt-3">Rubber plants</p>
-        </div>
-        <div>
-          <img src="../images/pearls.png" alt="pearls" class="w-100" />
-          <p class="playfair-font fw-bold pt-3">String of pearls</p>
+        <div class="align-self-center">
+          <button
+            onclick="previousCollection()"
+            class="border-0 rounded-circle p-2 px-3 mx-2 bg-light"
+          >
+            <i class="fa-solid fa-caret-right fs-6" style="color: #22511f"></i>
+          </button>
+          <button
+            onclick="nextCollection()"
+            class="border-0 rounded-circle p-2 px-3 mx-2 mt-2 bg-light"
+          >
+            <i class="fa-solid fa-caret-left fs-6" style="color: #22511f"></i>
+          </button>
         </div>
       </div>
     </section>
@@ -253,7 +309,7 @@
     <!-- form section ends -->
 
     <!-- choosing section starts -->
-    <section class="mt-5 container">
+    <section class="my-5 container">
       <h2 class="text-center playfair-font">Chooseing the right path</h2>
       <div class="d-flex flex-column flex-md-row gap-5 mt-5 mx-lg-5">
         <div class="choose-icons p-3 py-5">
@@ -297,27 +353,79 @@
     <!-- Chooseing section ends -->
 
     <!-- clients section ends -->
-    <section class="clients mt-5 mx-5">
+    <section class="container mt-5">
       <h2 class="playfair-font">What clients talk about us</h2>
-      <div
-        class="position-relative d-flex mx-lg-auto mt-5 gap-3 border border-0` rounded-5 p-2 p-lg-5 pt-4"
-      >
-        <img
-          src="../images/clients.png"
-          alt="clients"
-          class="d-none d-lg-block"
-        />
-        <p class="fs-1 px-lg-3 align-self-start">
-          <i class="fa-solid fa-quote-left"></i>
-        </p>
-        <p class="align-self-start">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when It is a long .It is a long .It is a
-          long established fact that a reader will be . It is a long established
-          fact that a reader .
-        </p>
-        <p class="fs-1 align-self-end mt-5">
-          <i class="fa-solid fa-quote-right"></i>
+      <div class="d-flex flex-column flex-md-row justify-content-evenly mt-3">
+        <button
+          onclick="previousClients()"
+          class="d-none d-md-block border-0 rounded-circle p-3 px-4 bg-light my-auto"
+        >
+          <i class="fa-solid fa-caret-left fs-4" style="color: #22511f"></i>
+        </button>
+        <div class="clients-icons">
+          <div class="clients mx-auto border-0 rounded-5 p-3 px-5 effect">
+            <div class="fs-6">
+              <p><i class="fa-solid fa-quote-left text-success"></i></p>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when It is a long .It is a
+                long .It is a long established fact that a reader will be . It
+                is a long established fact that a reader .
+              </p>
+              <p class="text-end">
+                <i class="fa-solid fa-quote-right text-success"></i>
+              </p>
+            </div>
+            <img src="../images/clients.png" alt="client" />
+          </div>
+          <div
+            class="clients flex-row-reverse gap-5 mx-auto border-0 rounded-5 p-3 px-5 effect"
+          >
+            <div class="fs-6">
+              <p><i class="fa-solid fa-quote-left text-success"></i></p>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when It is a long .It is a
+                long .It is a long established fact that a reader will be . It
+                is a long established fact that a reader .
+              </p>
+              <p class="text-end">
+                <i class="fa-solid fa-quote-right text-success"></i>
+              </p>
+            </div>
+            <img src="../images/clients-sec.png" alt="client" />
+          </div>
+          <div
+            class="clients flex-row-reverse gap-5 mx-auto border-0 rounded-5 p-3 px-5 effect"
+          >
+            <div class="fs-6">
+              <p><i class="fa-solid fa-quote-left text-success"></i></p>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when It is a long .It is a
+                long .It is a long established fact that a reader will be . It
+                is a long established fact that a reader .
+              </p>
+              <p class="text-end">
+                <i class="fa-solid fa-quote-right text-success"></i>
+              </p>
+            </div>
+            <img src="../images/clients-third.png" alt="client" />
+          </div>
+        </div>
+        <p class="text-center my-auto">
+          <button
+            onclick="previousClients()"
+            class="d-md-none border-0 rounded-circle p-3 px-4 bg-light my-auto"
+          >
+            <i class="fa-solid fa-caret-right fs-4" style="color: #22511f"></i>
+          </button>
+          <button
+            onclick="NextClients()"
+            class="border-0 rounded-circle p-3 px-4 bg-light my-auto"
+          >
+            <i class="fa-solid fa-caret-right fs-4" style="color: #22511f"></i>
+          </button>
         </p>
       </div>
     </section>
